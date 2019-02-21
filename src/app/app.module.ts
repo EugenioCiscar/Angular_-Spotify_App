@@ -14,6 +14,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {RUTAS} from './app.routes';
 import {SpotifyService} from './services/spotify.service';
 
+//Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import {SpotifyService} from './services/spotify.service';
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,4 @@
-<app-loading class="m-5" *ngIf="loadingArtist">
-
-</app-loading>
+<app-loading class="m-5" *ngIf="loadingArtist"></app-loading>
 <div class="row animated fadeIn" *ngIf="!loadingArtist">
     <div class="col-2">
         <img [src]="artista.images | noimage" class="img-thumbnail img-circle">
@@ -20,7 +18,7 @@
     </div>
 </div>
 
-<div class="raw m-5">
+<div class="raw m-5 artist">
     <div class="col">
         <table class="table">
             <thead>
